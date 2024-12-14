@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://InfinitePatience.github.io/design_practice"
+}

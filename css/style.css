@@ -154,13 +154,17 @@ data속성 => data-로 시작하는 속성으로 이 속성은
 
 .visual.motion .mainText p span {
 	display: block;
+	-webkit-animation-name: textAni;
 	animation-name: textAni;
+	-webkit-animation-duration: 1.8s;
 	animation-duration: 1.8s;
 }
 .visual.motion .mainText p:nth-child(2) span {
+	-webkit-animation-duration: 1.7s;
 	animation-duration: 1.7s;
 }
 .visual.motion .mainText p:nth-child(3) span {
+	-webkit-animation-duration: 1.5s;
 	animation-duration: 1.5s;
 }
 
@@ -478,9 +482,13 @@ data속성 => data-로 시작하는 속성으로 이 속성은
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-animation-name: spin;
 	animation-name: spin;
+	-webkit-animation-duration: 10s;
 	animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 	transition: .4s;
 }
@@ -525,7 +533,9 @@ data속성 => data-로 시작하는 속성으로 이 속성은
 }
 
 .con03.motion .textWrap ul li p {
+	-webkit-animation-name: textAni;
 	animation-name: textAni;
+	-webkit-animation-duration: 1.3s;
 	animation-duration: 1.3s;
 }
 

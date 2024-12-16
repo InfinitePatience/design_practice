@@ -446,9 +446,8 @@ data속성 => data-로 시작하는 속성으로 이 속성은
 /* 🔴readmore */
 .con03 .btnWrap {
 	position: absolute;
-	right: 50px;
+	right: -50%;
 	top: 60%;
-	left: 50%;
 	z-index: 3;
 	
 }
@@ -528,7 +527,7 @@ data속성 => data-로 시작하는 속성으로 이 속성은
 	transition-delay: 0.3s;
 }
 .con03.motion .btnWrap {
-	right: 50%;
+	right: 40%;
 	transition: 1.2s;
 }
 
@@ -587,4 +586,93 @@ footer .bottom .sns {
 }
 footer .bottom .sns li {
 	margin-right: 30px;
+}
+
+/* 🔴responsive */
+/* pc 1650px ~1301px */
+@media screen and (max-width:1650px) {
+	.visual .mainText{
+		font-size: 120px;
+	}
+	.visual .svgAni { 
+		top: 2%;
+		right: 5%
+	}
+	.visual .svgAni svg {
+		width: 950px;
+	}
+	.visual .subText {
+		margin-left: 10%;
+	}
+	.con03.motion .btnWrap {
+		right: 20%;
+	}
+}
+
+/* 1300px ~1025px */
+@media screen and (max-width:1300px) {
+	.visual .mainText {
+		font-size: 10vw;
+		width: 100%;
+	}
+	.visual .svgAni { 
+		top: 10%;
+		right: 2%
+	}
+	.visual .svgAni svg{
+		width: 700px;
+	}
+	.visual .subText {
+    margin-left: 0%; 
+		width: 100%;
+		padding: 2% 5%;
+		box-sizing: border-box;
+		position: absolute;
+		left:0;
+		bottom: 8%;
+	}
+	.con02 .workList {
+		width: 80%;
+	}
+	footer .textWrap a {
+		font-size: 13vw;
+	}
+}
+
+/* 1024px ~801px */
+@media screen and (max-width:1024px) {
+	.visual .mainText {
+		font-size: 10vw;
+		width: 100%;
+		position: absolute;
+		top: 3%;
+	}
+	.visual .svgAni { 
+		top: 0%;
+		right: 20%
+	}
+	.visual .svgAni svg{
+		width: 830px;
+	}
+	.con01 .title h2 {
+		font-size: 7vw;
+	}
+	.con02 .title {
+		font-size: 18vw;
+	}
+	.con02 .workList {
+		width: 90%;
+	}
+	.con03.motion .btnWrap {
+		right: 10%;
+	}
+	footer .textWrap .contact {
+		font-size: 14vw;
+	}
+	footer .textWrap a {
+		font-size: 12vw;
+	}
+	footer .bottom {
+		font-size: 20px;
+	}
 }
